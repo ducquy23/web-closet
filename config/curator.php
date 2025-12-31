@@ -25,6 +25,9 @@ return [
     ],
     'curation_presets' => [
         \Awcodes\Curator\Curations\ThumbnailPreset::class,
+        \App\Curations\ProductThumbnailPreset::class,
+        \App\Curations\ProductGalleryPreset::class,
+        \App\Curations\CategoryBannerPreset::class,
     ],
     'directory' => 'media',
     'disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),
