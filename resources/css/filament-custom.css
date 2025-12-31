@@ -1,0 +1,70 @@
+.curator-picker .curator-thumbnail {
+    width: 100px !important;
+    height: auto !important;
+}
+
+/* Di chuyển icon sang phải cho curator-picker */
+.curator-picker .curator-thumbnail-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.curator-picker .curator-thumbnail-container .curator-thumbnail-actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.curator-picker .curator-thumbnail-container .curator-thumbnail-actions button {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.curator-picker .curator-thumbnail-container .curator-thumbnail-actions button:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.curator-picker .curator-thumbnail-container .curator-thumbnail-actions svg {
+    width: 16px;
+    height: 16px;
+}
+
+.custom-curator-picker > div > div.absolute {
+    right: 0;
+    background: #ffffff;
+}
+
+.curator-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 16px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.curator-picker-grid li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curator-picker-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
